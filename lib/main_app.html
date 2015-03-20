@@ -1,0 +1,38 @@
+<!--
+  Copyright (c) 2015, <your name>. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+-->
+
+<!-- import polymer-element's definition -->
+<link rel="import" href="../../packages/polymer/polymer.html">
+
+<polymer-element name="main-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    p {
+        margin: 20px;
+        padding: 80px 20px;
+        border-radius: 20px;
+        background-color: #eee;
+    }
+    </style>
+    
+    
+<table>
+  <tr template repeat="{{project in projects}}">
+            <td> Name and Date
+                          {{project.name}}
+                          {{project.dateCreated}}</td>
+        
+  </tr>
+</table>
+
+   <div>sometext</div>
+    
+    
+   </template>
+  <script type="application/dart" src="main_app.dart"></script>
+</polymer-element>
